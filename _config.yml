@@ -31,7 +31,7 @@ github_username:  wrjanan
 
 # Build settings
 theme: minima
-remote_theme: jekyll/minima
+remote_theme: jekyll/minima@6513ea8b9c1c4909b6aa79926d52a1f7d865c5e7
 plugins:
   - jekyll-feed
 
