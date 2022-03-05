@@ -1,14 +1,18 @@
-## Welcome to Juno's NFT list
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-You can use the [editor on GitHub](https://github.com/hippietechies/nftjuno/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+layout: home
+---
+{% assign nfts = site.data.nfts | sort: 'launchdate' | reverse %}
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### NFTs
-
-{% assign work_items = site.work_items | sort: 'date' | reverse %}
-{% for work_item in work_items limit:4  %}
-  <div>
-      <a href="{{ work_item.url | prepend: site.baseurl }}">{{ work_item.title }}</a>
+{% for nft in nfts %}
+  <div style="align:center">
+    <a href="{{ nft.name | prepend: nft.link }}">
+      <img width="50" height="50" src="{{ nft.icon_link }}">{{ nft.name }}
+      <img src="{{ nft.banner_link }}">
+    </a>
+    <br />
+    <br />
   </div>
 {% endfor %}
