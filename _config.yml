@@ -24,14 +24,14 @@ description: >- # this means to ignore newlines until "baseurl:"
   This list is decentralised and meant to be a consolidation site for all NFTs of Juno.
   Let us work towards a decentralised future, and where everyone add on their own NFTs accordingly,
   and the assets on github which can and should be used by all Juno communities.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/nftjuno" # the subpath of your site, e.g. /blog
+url: "https://hippietechies.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: nft_juno
 github_username:  wrjanan
 
 # Build settings
 theme: minima
-remote_theme: minima
+remote_theme: jekyll/minima
 plugins:
   - jekyll-feed
 
